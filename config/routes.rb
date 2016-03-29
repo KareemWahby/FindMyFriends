@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'friendships/request_friendship'
+
+  get 'friendships/accept_friendship'
+
+  get 'friendships/decline_frindship'
+
+  get 'friendships/view_pending'
+
+  get 'friendships/view_friends'
+
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
